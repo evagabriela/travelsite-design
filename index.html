@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <title>Tripping</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="Shortcut Icon" href="Images/classyturquose.png"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+  @import url(http://www.google.com/cse/api/branding.css);
+  </style>
+        <script type="text/javascript">
+        $(document).ready (function(){
+          $('.carousel').carousel ({
+            interval: 5000
+          });
+        });
+        </script>
+      </head>
+  <body>
+    <div id="header">
+      <div id="logo">
+        <a href="/" title="Find Your Dream Vacation Rentals and Short Term Rentals"><img src="images/tripping_white.png" border="0" width="142" height="56" alt="Find Your Dream Vacation and Short Term Rentals" /></a>
+      </div>
+            <ul id="header-nav" class="nav-text">
+              <li class="nav-top-link"> <a class="nav-top-link" href="/about">About Us</a></li>
+              <li><a class="nav-top-link" href="/deals" title="Deals">Deals</a></li>
+                                                                 
+              <li><a id="header-create-listing"  href="#" title="Create A Listing">List A Place</a></li>
+            </ul>
+    </div>
+
+      <!-- Title -->
+    <div class = "container">
+      <div class = "row">
+         <div class="col-xs-6 col-sm-4"> 
+          <h2>Krisztian's place</h2>
+          <p>Apartment/Flat in Budapest</p>
+        </div>
+      </div>
+
+    <div class = "row">
+      <div class="col-md-8">
+          <!-- Carousel
+          ================================================== -->
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" src="https://s3.amazonaws.com/tripping-partners/wimdu/images/12T89LTQ/cd112cc4f8d2c0aeeca5ec3483ca4f66_lp.jpg" alt="First slide" class="img-thumbnail">
+              </div>
+              <div class="item">
+                <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" src="https://s3.amazonaws.com/tripping-partners/wimdu/images/12T89LTQ/69913394de3073c26e6588e0e96c58b9_lp.jpg" alt="Second slide" class="img-thumbnail">
+              </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+          </div><!-- /.carousel -->
+    </div>      
+        <div class="col-md-4"> 
+          <div class="thumbnail">
+              <div class="caption">
+                <div class = "price-panel">
+                  <div class = "pricing">
+                      <div class="text-muted">From</div>
+                      <div class="price_amount">
+                        <!-- Need to set up automatic currency exchange from Euros to dollars? -->
+                        <span class="dailyAmount" style=""> $ 45 </span> 
+                        <span class="weeklyAmount" style="display: none;">$ 270 </span>
+                        <span class="monthlyAmount" style="display: none;">$ 950</span>
+                      </div>
+                      <select id="payment-period">
+                        <option value="dailyAmount">Daily</option>
+                        <option value="weeklyAmount">Weekly</option>
+                        <option value="monthlyAmount">Monthly</option>
+                      </select>
+                  </div>
+         
+                </div>
+               <div class="row row-condensed">
+                <div class=".col-xs-6 .col-sm-3">
+                  <div class="row row-condensed">
+                    <div class=".col-xs-2 .col-sm-2">
+                      <label for="checkin">
+                        Check in
+                      </label>
+                      <input class="checkin ui-datepicker-target" id="checkin" name="checkin" placeholder="mm/dd/yyyy" type="text"></div>
+                      <label for="checkout">
+                        Check out
+                      </label>
+                      <input class="checkout ui-datepicker-target" id="checkout" name="checkout" placeholder="mm/dd/yyyy" type="text"> </div>
+                </div>
+                <div class=".col-md-1">
+                  <label for="number_of_guests">
+                    Guests
+                  </label>
+                  <div class="select">
+                    <select class="input-tiny" id="number_of_guests" name="number_of_guests" onchange="Airbnb.refreshSubTotal();"><option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16+</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              </div>
+                    <p>
+                   in Budapest at Krisztian's, from 45 EUR per night per one person ! Discover Budapest, and enjoy the benefits of homestay: practical advice, friendliness and low prices.  low prices low prices  low prices  low prices </p>
+                      <div class= "book-it">
+                        <button type="button" class="btn btn-default btn-lg btn-success">Book it </button>
+                      </div>
+                         <center><button type="button" class="btn btn-default btn-sm icon">
+                           <span class="glyphicon glyphicon-heart"></span> 
+                             Save to Wishing List
+                          </button>
+                          <div class = "save">
+                          <p> Save 82 times<p> 
+                          </div>
+                        </center>
+              </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Description -->
+  <div class = "container-description">
+
+      <div class="row">  
+         <div class="col-md-8">
+          Tabs goes here
+            <div class="row">
+              <div class="col-md-8">
+                <p>
+                   in Budapest at Krisztian's, from 45 EUR per night per one person ! Discover Budapest, and enjoy the benefits of homestay: practical advice, friendliness and low prices. This is a/an « Lodging » with a capacity of 5 person(s).
+                 </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                  <div class=".col-md-3">
+                basic info goes here
+                 </div>
+            </div>
+            </div>
+        </div>
+
+
+         <div class="col-md-4">
+            <div class="thumbnail">
+              <div class="caption">
+            <h3>Similar Listing</h3>
+            <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" src="https://s3.amazonaws.com/tripping-partners/housetrip/images/8348/33f51e9deb298862c3042b9c655f1ef3_lp.jpg" alt="First slide" class="img-thumbnail">
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+             <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+
+             <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" src="https://s3.amazonaws.com/tripping-partners/nineflats/images/28546-apartment-santiago_de_chile-monserrat/dadc3469117da73fed122f6a75a2cfd1_lp.jpg" alt="First slide" class="img-thumbnail">
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!-- create a list view of the properties  -->
+<!--   <tripping>
+  <properties>
+    <property>
+      <id>849</id>
+      <title><![CDATA[Apartment/Flat in Budapest, at Krisztian's place]]></title>
+      <description><![CDATA[Lodging, in Budapest at Krisztian's, from 45 EUR per night per one person ! Discover Budapest, and enjoy the benefits of homestay: practical advice, friendliness and low prices. This is a/an « Lodging » with a capacity of 5 person(s).]]></description>
+      <sleeps>5</sleeps>
+      <minimum-stay>3</minimum-stay>
+       <accommodation-type><![CDATA[Apartment/Flat]]></accommodation-type>
+      <location>
+        <country><![CDATA[HU]]></country>
+        <city><![CDATA[Budapest]]></city>
+        <state><![CDATA[n/a]]></state>
+        <latitude>47.4966994</latitude>
+        <longitude>19.0686717</longitude>
+      </location>
+      <amenities>
+        <amenity>Disabled accessible </amenity>
+        <amenity>Senior accessible </amenity>
+        <amenity>Cooking facilities</amenity>
+        <amenity>Laundry</amenity>
+        <amenity>Bath</amenity>
+        <amenity>DVD/Films</amenity>
+        <amenity>Hair dryer</amenity>
+        <amenity>Heating</amenity>
+        <amenity>Kettle</amenity>
+        <amenity>Kitchenette</amenity>
+        <amenity>Radio</amenity>
+        <amenity>Fridge</amenity>
+        <amenity>Cable/satellite</amenity>
+        <amenity>Towels and sheets provided</amenity>
+        <amenity>Wifi</amenity>
+        <amenity>TV</amenity>
+      </amenities>
+
+      <availability>
+        <available>2013-10-20</available>
+        <available>2013-10-21</available>
+        <available>2013-10-22</available>
+        <available>2013-10-23</available>
+        <available>2013-10-24</available>
+        <available>2013-10-25</available>
+        <available>2013-10-26</available>
+        <available>2013-11-10</available>
+        <available>2013-11-11</available>
+        <available>2013-11-12</available>
+        <available>2013-11-13</available>
+        <available>2013-11-14</available>
+        <available>2013-11-15</available>
+        <available>2013-11-16</available>
+        <available>2013-11-17</available>
+        <available>2013-11-18</available>
+        <available>2013-11-19</available>
+        <available>2013-11-20</available>
+        <available>2013-11-22</available>
+      </availability>
+
+    -->
+
+<!--     </property>
+  </properties>
+</tripping> -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
