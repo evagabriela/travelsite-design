@@ -439,15 +439,15 @@
 }
 
 
-
+/*
 .container-description {
   padding-right: 15px;
-   margin-left: 15px;
+  margin-left: 15px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 15px;
   width: 1170px;
-}
+}*/
 
 media="all"
 .text-muted{
@@ -459,7 +459,7 @@ media="all"
   padding: 10px;
 }
 
-@media (min-width: 1200px)
+/*@media (min-width: 1200px)
 .container-description {
 width: 1170px;
 }
@@ -472,7 +472,7 @@ width: 970px;
 .container-description {
 width: 750px;
 }
-
+*/
 
 
 
