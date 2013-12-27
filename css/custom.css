@@ -379,6 +379,10 @@
   padding: 2px;
 }
 
+.price-inquire {
+  height: 414px;
+}
+
 .price_amount {
   font-size: 30px;
   font-weight: bold;
@@ -387,22 +391,71 @@
 }
 
 .row-condensed {
-  margin-left: -6.25px;
-  margin-right: -6.25px;
+  padding: 22px 3% 11px;
+
 }
 
-.date {
-  width: 100px;
+.daterange {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+  cursor: default;
+  text-align: center;
+  float: left;
+  width: 77%;
+}
+
+.status {
+  float: left;
+  width: 50%;
+}
+
+.daterange label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.daterange input {
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+display: inline-block;
+height: 2.8em;
+padding: 0 6px;
+margin-bottom: 9px;
+font-size: 16px;
+line-height: 22px;
+color: #212121;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+-ms-border-radius: 2px;
+-o-border-radius: 2px;
+border-radius: 2px;
+border: 1px solid #b9bcc2;
+-webkit-transition: border linear 0.2s,box-shadow linear 0.2s;
+transition: border linear 0.2s,box-shadow linear 0.2s;
+
+}
+
+
+.btn-sm {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.btn-sm:hover {
+  background-color:#ED5D48;
+  color: #fff
 }
 
 
 .glyphicon-heart{
-  color: #ccc;
   text: #ccc
 }
 
 .glyphicon-heart:hover{
-  color: #DE2C6E;
+  color: #D23131;
   text: #fff
 }
 
@@ -415,39 +468,44 @@
   background-color: #efefef
 }
 
-.book-it{
-  padding: 10px;  
+.button-space{
+  padding: 10px;
+  margin: 10px;
 }
 
 .btn-lg {
-  width: 100%;
-  padding: 10px;
+  width: 80%;
+  color: #fff;
+  border-color: #bf5e00;
+  background-color: #ff7e00;
+  text-shadow: 0 1px 1px rgba(33,33,33,0.5);
+  line-height: 24px;
+  font-size: 18px;
+  padding: 12px 32px;
 }
 
+.btn-lg:hover{
+  background-color: #FB9418;
+  color: #fff;
+}
 .btn-sm p{
   background-color: #ccc;
 }
 
-.btn-sm:hover{
-  color: #DE2C6E
+.wishing-list {
+  text-align: center;
+  margin-top: 15px;
 }
-
 
 
 .img-thumbnail {
   width: 780px;
 }
 
+#bottom{
+  margin-top: 10px;
+}
 
-/*
-.container-description {
-  padding-right: 15px;
-  margin-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 15px;
-  width: 1170px;
-}*/
 
 media="all"
 .text-muted{
@@ -459,20 +517,6 @@ media="all"
   padding: 10px;
 }
 
-/*@media (min-width: 1200px)
-.container-description {
-width: 1170px;
-}
-
-@media (min-width: 992px)
-.container-description {
-width: 970px;
-}
-@media (min-width: 768px)
-.container-description {
-width: 750px;
-}
-*/
 
 
 

@@ -63,13 +63,17 @@
             <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
             <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
           </div><!-- /.carousel -->
-        </div>      
+        </div>  
+
+<!-- Price Panel  -->
         <div class="col-md-4"> 
-          <div class="thumbnail">
+          <div class="thumbnail price-inquire" >
             <div class="caption">
               <div class = "price-panel">
                 <div class = "pricing">
-                  <div class="text-muted">From</div>
+                  <div class="text-muted">
+                    From
+                  </div>
                   <div class="price_amount">
                     <!-- Need to set up automatic currency exchange from Euros to dollars? -->
                     <span class="dailyAmount" style=""> $ 45 </span> 
@@ -83,19 +87,26 @@
                   </select>
                 </div>
               </div>
+            </div>
+              <!-- Checking-in, Checkout-out -->
+
               <div class="row row-condensed">
-                <div class=".col-xs-6 .col-sm-3">
-                  <div class="row row-condensed">
-                    <div class=".col-xs-2 .col-sm-2">
+                  <div class = "daterange">
+                    <div class = "status">
                       <label for="checkin">
                         Check in
                       </label>
-                      <input class="checkin ui-datepicker-target" id="checkin" name="checkin" placeholder="mm/dd/yyyy" type="text"></div>
+                      <input class="checkin ui-datepicker-target" id="checkin" name="checkin" placeholder="mm/dd/yyyy"  size="10" type="text" autocomplete="off" readonly="readonly">
+                    </div>
+                    <div class ="status">
                       <label for="checkout">
                         Check out
                       </label>
-                      <input class="checkout ui-datepicker-target" id="checkout" name="checkout" placeholder="mm/dd/yyyy" type="text"> </div>
+                      <input class="checkin ui-datepicker-target" id="checkin" name="checkin" placeholder="mm/dd/yyyy" size="10" type="text" autocomplete="off" readonly="readonly">
                     </div>
+                  </div>
+              
+                  <!-- Guess # -->
                     <div class=".col-md-1">
                       <label for="number_of_guests">
                         Guests
@@ -121,28 +132,29 @@
                       </div>
                     </div>
                   </div>
+                    <!-- End Guess # -->
+                     <div class = "wishing-list">
+                 <div class= "button-space">
+                  <button type="button" class="btn btn-primary btn-lg ">INQUIRE NOW  </button>
                 </div>
-                <p>
-                 in Budapest at Krisztian's, from 45 EUR per night per one person ! Discover Budapest, and enjoy the benefits of homestay: practical advice, friendliness and low prices.  low prices low prices  low prices  low prices </p>
-                 <div class= "book-it">
-                  <button type="button" class="btn btn-default btn-lg btn-success">Book it </button>
+               
+                 <button type="button" class="btn btn-default btn-sm icon button-space">
+                   <span class="glyphicon glyphicon-heart"></span> 
+                   Add to Favorites
+                 </button>
+                 <div class = "save">
+                  <p> Save 82 times<p> 
+                  </div>
                 </div>
-                <center><button type="button" class="btn btn-default btn-sm icon">
-                 <span class="glyphicon glyphicon-heart"></span> 
-                 Save to Wishing List
-               </button>
-               <div class = "save">
-                <p> Save 82 times<p> 
-                </div>
-              </center>
-            </div> 
-          </div>
+          </div> 
         </div>
+<!-- End Price pannel -->
       </div>
-    </div>
+</div>
+<!-- End of top container -->
 
     <!-- Description -->
-    <div class = "container"> 
+    <div class = "container" id="bottom"> 
       <div class="col-md-8">
           <div class="row">
             <div class="col-md-8">
@@ -185,9 +197,9 @@
             </div>
         </div>
       </div>
-
-
-        </div>
+    </div>
+  
+    <!-- End of Description -->
 
         <!-- Similar Listing -->
         <div class="col-md-4">
@@ -204,7 +216,6 @@
             </div>
           </div>
         </div>
-        <!-- End Similar listing -->
     </div>
  <!-- End description -->
 <!-- 
