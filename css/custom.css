@@ -506,6 +506,15 @@ transition: border linear 0.2s,box-shadow linear 0.2s;
   margin-top: 10px;
 }
 
+.description-pannel-container{
+  border: 1px solid #d3d3d3;
+  background-color: #fff;
+}
+
+.description-pannel {
+  padding: 10px;
+  padding-bottom: 44px;
+}
 
 media="all"
 .text-muted{
