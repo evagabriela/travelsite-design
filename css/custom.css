@@ -581,6 +581,10 @@ margin-right: 5px;
   color:#fff;
 }
 
+.footer {
+  background-color: #D2C1BE;
+}
+
 media="all"
 .text-muted{
   color: #959595;
@@ -594,6 +598,10 @@ media="all"
 .center-listing {
   text-align: center;
 
+}
+
+.text {
+  color: #212121;
 }
 
 
