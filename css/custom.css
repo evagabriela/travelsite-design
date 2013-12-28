@@ -372,9 +372,8 @@
 #payment-period {
   position: absolute;
   display: inline-block;
-  top: 5%;
+  margin: 0px 20px 0px 0;
   right: 35px;
-  font-size: 2.5em;
   line-height: 24px;
   padding: 2px;
 }
@@ -529,12 +528,24 @@ transition: border linear 0.2s,box-shadow linear 0.2s;
   margin-left: -30px
 }*/
 
-.media-list{
+.icon-yellow {
+  color: #FFC400;
+}
+
+.list-unstyled{
   float: left;
-  margin: 0 7px 11px 0;
+  margin-right: 9px;
   padding-left: 0px;
   position: relative;
+  list-style: none;
+}
 
+.space {
+  margin: 0 6px 10px 5px;
+}
+
+.icon-green{
+  color: #11AA55;
 }
 
 .thumbnail {
@@ -559,11 +570,15 @@ height: 16px;
 width: 16px;
 float: left;
 margin-right: 5px;
-background: url(images/check.png) ;
 }
 
-.profile-rating-plus {
-  
+.listing {
+  padding: 0 9px 9px 9px;
+}
+
+.listing-option:hover {
+  background-color: #4593CB;
+  color:#fff;
 }
 
 media="all"
@@ -576,6 +591,10 @@ media="all"
   padding: 10px;
 }
 
+.center-listing {
+  text-align: center;
+
+}
 
 
 
