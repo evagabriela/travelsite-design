@@ -516,6 +516,56 @@ transition: border linear 0.2s,box-shadow linear 0.2s;
   padding-bottom: 44px;
 }
 
+.description {
+  margin-bottom: 20px;
+}
+
+/*.amenities-offer {
+  list-style: none;
+}
+
+.amanities {
+  width: 100%;
+  margin-left: -30px
+}*/
+
+.media-list{
+  float: left;
+  margin: 0 7px 11px 0;
+  padding-left: 0px;
+  position: relative;
+
+}
+
+.thumbnail {
+  padding: 20px;
+}
+
+.content-rental-review-header {
+  position: relative;
+display: block;
+padding-bottom: 8px;
+}
+
+.content-rental-review-header ul{
+  list-style: none;
+}
+
+.content-rental-review-header li{
+  position: relative;
+display: block;
+margin-top: 8px;
+height: 16px;
+width: 16px;
+float: left;
+margin-right: 5px;
+background: url(images/check.png) ;
+}
+
+.profile-rating-plus {
+  
+}
+
 media="all"
 .text-muted{
   color: #959595;
