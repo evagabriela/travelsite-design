@@ -4,15 +4,15 @@
 ### The following design was built using html/css and bootstrap. 
 
 ##BEFORE
-#### Non-responsive design with vertical alignment
+### Non-responsive design with vertical alignment
 
 ![image](https://s3-us-west-1.amazonaws.com/gabyportfolio/tripping/Screen+Shot+2013-12-29+at+1.48.09+PM.png)
 ![image](https://s3-us-west-1.amazonaws.com/gabyportfolio/tripping/Screen+Shot+2013-12-29+at+1.48.23+PM.png)
 
 
 ##AFTER
-#### Responsive design with horizonal alignment
-![image](https://s3-us-west-1.amazonaws.com/gabyportfolio/tripping/Screen+Shot+2013-12-29+at+1.49.22+PM.png)
-![image](https://s3-us-west-1.amazonaws.com/gabyportfolio/tripping/Screen+Shot+2013-12-29+at+1.49.36+PM.png)
-![image](https://s3-us-west-1.amazonaws.com/gabyportfolio/tripping/Screen+Shot+2013-12-29+at+1.49.45+PM.png)
+### Responsive design with horizonal alignment
+![image](https://s3-us-west-1.amazonaws.com/gabyportfolio/tripping/Screen+Shot+2013-12-29+at+2.02.33+PM.png)
+![image](https://s3-us-west-1.amazonaws.com/gabyportfolio/tripping/Screen+Shot+2013-12-29+at+2.05.46+PM.png)
+
 
