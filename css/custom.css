@@ -256,14 +256,7 @@ text-shadow: 1px 1px 0 rgba(0,0,0,0.4);}
   margin: 2.5% 0 0 30%;  
 }
 
-
-
-
-
-
-
 /*custom boostrap*/
-
 
 .price-pannel {
   background-color: #efefef;
@@ -325,24 +318,23 @@ text-shadow: 1px 1px 0 rgba(0,0,0,0.4);}
 .daterange input {
   background-color: #fff;
   -webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-display: inline-block;
-height: 2.8em;
-padding: 0 6px;
-margin-bottom: 9px;
-font-size: 16px;
-line-height: 22px;
-color: #212121;
--webkit-border-radius: 2px;
--moz-border-radius: 2px;
--ms-border-radius: 2px;
--o-border-radius: 2px;
-border-radius: 2px;
-border: 1px solid #b9bcc2;
--webkit-transition: border linear 0.2s,box-shadow linear 0.2s;
-transition: border linear 0.2s,box-shadow linear 0.2s;
-
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 2.8em;
+  padding: 0 6px;
+  margin-bottom: 9px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212121;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #b9bcc2;
+  -webkit-transition: border linear 0.2s,box-shadow linear 0.2s;
+  transition: border linear 0.2s,box-shadow linear 0.2s;
 }
 
 
@@ -427,15 +419,6 @@ transition: border linear 0.2s,box-shadow linear 0.2s;
   margin-bottom: 20px;
 }
 
-/*.amenities-offer {
-  list-style: none;
-}
-
-.amanities {
-  width: 100%;
-  margin-left: -30px
-}*/
-
 .icon-yellow {
   color: #FFC400;
 }
@@ -493,7 +476,6 @@ margin-right: 5px;
   background-color: #D2C1BE;
 }
 
-media="all"
 .text-muted{
   color: #959595;
 }
@@ -506,7 +488,6 @@ media="all"
 .center-listing {
   text-align: center;
   margin-top: -6px;
-
 }
 
 .text {
@@ -515,7 +496,6 @@ media="all"
 
 h5{
   font-size: 16px;
-
 }
 
 
