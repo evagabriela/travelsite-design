@@ -30,112 +30,309 @@
                                                                       
                   <li><a id="header-create-listing"  href="#" title="Create A Listing">List A Place</a></li>
                 </ul>
-          
-    
-       </div>
+          </div>
 
-     <div class = "carousel-positioning">    
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="https://s3.amazonaws.com/tripping-partners/housetrip/images/8348/b8719e8b3953160416430b7965cc85ff_lp.jpg" class="img-thumbnail">
+       <!-- Title -->
+        <div class = "container">
+          <div class = "row">
+           <div class="col-xs-6 col-sm-4"> 
+            <h1>Catherine's place</h1>
+            <p>Apartment/Flat in Lyon</p>
+          </div>
         </div>
-        <div class="item">
-          <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="https://s3.amazonaws.com/tripping-partners/housetrip/images/8348/33f51e9deb298862c3042b9c655f1ef3_lp.jpg" class="img-thumbnail">
+
+       <div class = "row">
+          <div class="col-md-8">
+          <!-- Carousel
+          ================================================== -->
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" src="https://s3.amazonaws.com/tripping-partners/housetrip/images/8348/b8719e8b3953160416430b7965cc85ff_lp.jpg" alt="First slide" class="img-thumbnail">
+              </div>
+              <div class="item">
+                <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" src="https://s3.amazonaws.com/tripping-partners/housetrip/images/8348/33f51e9deb298862c3042b9c655f1ef3_lp.jpg" alt="Second slide" class="img-thumbnail">
+              </div>
+              <div class="item">
+                <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" src="https://s3.amazonaws.com/tripping-partners/housetrip/images/8348/7db8cd91ed69aaafe89664d7ef9b5bee_lp.jpg" alt="Second slide" class="img-thumbnail">
+              </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+          </div><!-- /.carousel -->
+        </div>  
+
+
+
+  <!-- Price Panel  -->
+        <div class="col-md-4"> 
+          <div class="thumbnail price-inquire" >
+            <div class="caption">
+              <div class = "price-panel">
+                <div class = "pricing">
+                  <div class="text-muted">
+                    From
+                  </div>
+                  <div class="price_amount">
+                    <!-- Need to set up automatic currency exchange from Euros to dollars? -->
+                    <span class="dailyAmount" style=""> $ 45 </span> 
+                    <span class="weeklyAmount" style="display: none;">$ 270 </span>
+                    <span class="monthlyAmount" style="display: none;">$ 1000</span>
+                  
+                  <select id="payment-period">
+                    <option value="dailyAmount">Daily</option>
+                    <option value="weeklyAmount">Weekly</option>
+                    <option value="monthlyAmount">Monthly</option>
+                  </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <!-- Checking-in, Checkout-out -->
+
+              <div class="row row-condensed">
+                  <div class = "daterange">
+                    <div class = "status">
+                      <label for="checkin">
+                        Check in
+                      </label>
+                      <input class="checkin ui-datepicker-target" id="checkin" name="checkin" placeholder="mm/dd/yyyy"  size="10" type="text" autocomplete="off" readonly="readonly">
+                    </div>
+                    <div class ="status">
+                      <label for="checkout">
+                        Check out
+                      </label>
+                      <input class="checkin ui-datepicker-target" id="checkin" name="checkin" placeholder="mm/dd/yyyy" size="10" type="text" autocomplete="off" readonly="readonly">
+                    </div>
+                  </div>
+              
+                  <!-- Guess # -->
+                    <div class=".col-md-1">
+                      <label for="number_of_guests">
+                        Guests
+                      </label>
+                      <div class="select">
+                        <select><option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16+</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                    <!-- End Guess # -->
+                     <div class = "wishing-list">
+                 <div class= "button-space">
+                  <button type="button" class="btn btn-primary btn-lg ">INQUIRE NOW  </button>
+                </div>
+               
+                 <button type="button" class="btn btn-default btn-sm icon button-space">
+                   <span class="glyphicon glyphicon-heart"></span> 
+                   Add to Favorites
+                 </button>
+                 <div class = "save">
+                  <p> Save 72 times<p> 
+                  </div>
+                </div>
+          </div> 
         </div>
-        <div class="item">
-          <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="https://s3.amazonaws.com/tripping-partners/housetrip/images/8348/7db8cd91ed69aaafe89664d7ef9b5bee_lp.jpg" class="img-thumbnail">
+<!-- End Price pannel -->
+      </div>
+</div>
+<!-- End of top container -->
+
+<!-- Bottom container -->
+    <!-- Description -->
+    <div class = "container" id="bottom"> 
+      <div class="col-md-8 description-pannel-container" >
+          <div class="row description-pannel">
+            <div class="col-md-8">
+              <div class = "row">
+              <div class = ".col-md-4">
+                <h3>Description</h3>
+                 <p>Lodging, in Lyon at Catherine's, from 45 EUR per night per one person ! Discover Lyon, and enjoy the benefits of homestay: practical advice, friendliness and low prices. This is a/an « Lodging » with a capacity of 4 person(s).
+                </p> 
+              </div> <br>
+              <div class = ".col-md-4">
+                <h3>Reviews</h3>
+                <div class = "content-rental-review-header clearfix">
+                  <ul>
+                    <li class = "glyphicon glyphicon-star-empty icon-yellow"></li>
+                    <li class = "glyphicon glyphicon-star-empty icon-yellow"></li> 
+                    <li class = "glyphicon glyphicon-star-empty icon-yellow"></li>
+                    <li class = "glyphicon glyphicon-star-empty icon-yellow"></li>
+                    <li class = "glyphicon glyphicon-star-empty icon-yellow"></li>
+                    <li class = "glyphicon glyphicon-star-empty icon-yellow"></li>
+                  </ul>
+                </div> 
+                <p>This listing has received an average rating of 5 from 2013</p><br>
+              </div>
+
+              <div class = ".col-md-4">
+                <h3>Amenities</h3>
+                  <ul class ="list-unstyled">                                
+                    <li class = ".col-md-1 space"><span class="glyphicon glyphicon-ok icon-green"></span> Bath</li>
+                    <li class = ".col-md-1 space"><span class="glyphicon glyphicon-ok icon-green"></span> Heating</li>
+                    <li class = ".col-md-1 space"><span class="glyphicon glyphicon-ok icon-green"></span> Internet</li>
+                    <li class = ".col-md-1 space"><span class="glyphicon glyphicon-ok icon-green"></span> Kettle</li>
+                    <li class = ".col-md-1 space"><span class="glyphicon glyphicon-ok icon-green"></span> Kitchenette</li>
+                  </ul>
+              </div>
+              <div class = ".col-md-4">
+                  <ul class ="list-unstyled">
+                    <li class = ".col-md-1 space"><span class="glyphicon glyphicon-ok icon-green"></span> Radio</li>
+                    <li class = ".col-md-1 space"><span class="glyphicon glyphicon-ok icon-green"></span> Fridge</li>
+                    <li class = ".col-md-1 space"><span class="glyphicon glyphicon-ok icon-green"></span> Cable/satellite</li>
+                    <li class = ".col-md-1 space"><span class="glyphicon glyphicon-ok icon-green"></span> Shutter</li>
+                    <li class = ".col-md-1 space"><span class="glyphicon glyphicon-ok icon-green"></span> Phone</li>
+                  </ul>
+              </div>
+              <div class = ".col-md-4">
+                  <ul class ="list-unstyled">
+                    <li class = ".col-md-1 space"><span class="glyphicon glyphicon-ok icon-green"></span> Wifi</li>
+                    <li class = ".col-md-1 space"><span class="glyphicon glyphicon-ok icon-green"></span> TV</li>
+                    <li class = ".col-md-1 space"><span class="glyphicon glyphicon-ok icon-green"></span> Towels and sheets provided</li>
+                    <li class = ".col-md-1 space"><span class="glyphicon glyphicon-ok icon-green"></span> Working space</li>
+                  </ul>
+            </div>
+          </div><br><br> <!--  end of amenities   -->
+        </div> <!--  end of row    -->
+       <!--  end of .col-md-8   -->
+
+        <div class="col-md-4">
+          <div class="thumbnail basic-info">
+            <h4>Basic Information:</h4>
+            <div class="table-responsive">
+              <table class="table">
+                <tr> <td class="active">Capacity:5 </td></tr>
+                <tr><td class="active">Min. stay: 1 nights</td></tr>
+                <tr><td class="active">Daily Price: $45</td></tr>
+                <tr><td class="active">Weekly Price: $270</td></tr>
+                <tr><td class="active">Monthly Price: $100 </td></tr>
+                <tr><td class="active">Country: FR</td></tr>
+                <tr><td class="active">City: Lyon</td></tr>
+              </table>
+            </div>
+          </div>  
+        </div>
+
+        <div class="col-md-4">
+          <div class="thumbnail basic-info">
+            <img src="images/flipkey_view.png" alt="..." class="img-thumbnail">
+            
+          </div>  
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- End of Description -->
+
+        <!-- Similar Listing -->
+        <div class="col-md-4">
+          <div class="thumbnail listing">
+            <div class="caption">
+              <div class="col-md-12 center-listing">
+                <h3>Similar Listing</h3>
+              </div>
+              <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" src="https://s3.amazonaws.com/tripping-partners/wimdu/images/12T89LTQ/cd112cc4f8d2c0aeeca5ec3483ca4f66_lp.jpg" alt="First slide" class="img-thumbnail">
+              <p>Lodging, in Lyon at Catherine's, from 45 EUR per night per one person </p>
+              <center><p><a class="btn btn-default listing-option" href="index.html" role="button">View details &raquo;</a></p></center>
+
+              <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" src="https://s3.amazonaws.com/tripping-partners/nineflats/images/28546-apartment-santiago_de_chile-monserrat/dadc3469117da73fed122f6a75a2cfd1_lp.jpg" alt="First slide" class="img-thumbnail">
+              <p>Lodging, in Santiago du Chili at Fernando's, from 95 USD per night per one person </p>
+              <center><p><a class="btn btn-default listing-option" href="listing3.html" role="button">View details &raquo;</a></p></center>
+            </div>
+          </div>
         </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
-     
+    </div>
+ <!-- End description -->
+
+<div class = "footer">
+  <div class="container">
+  <hr>
+    <div class="row">
+    <div class="col-md-12 text">
+  <!--     Level 1: .col-md-12 -->
+      <div class="row">
+        <div class="col-md-3">
+          <h5>About Us</h5>
+         
+          <p>Contact Us</p>
+          <p>Our Team</p>
+          <p>Our Blog</p>
+          <p>Google+</p>
+          <p>Press</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Get Started</h5>
+           
+          <p>FAQs</p>
+          <p>Sitemap</p>
+          <p>Privacy Policy</p>
+          <p>Terms of Service</p>
+          <p>Community</p>
+        </div>
+        <div class="col-md-6">
+          <h5>Top Travel Destinations</h5>
+          
+          <div class="row">
+            <div class="col-md-3">
+              <p>Amsterdam, Netherlands</p>
+              <p>Barcelona, Spain</p>
+              <p>Berlin, Germany</p>
+              <p>Boston, USA</p>
+              <p>Buenos Aires, Argentina</p>
+            </div>
+            <div class="col-md-3">
+               <p>New York City, USA</p>
+              <p>Paris, France</p>
+              <p>Rome, Italy</p>
+              <p>San Francisco, USA</p>
+              <p>Sydney, Australia</p>
+            </div>
+            <div class="col-md-3">
+              <p>Cape Town, S.A.</p>
+              <p>Chicago, USA</p>
+              <p>Istanbul, Turkey</p>
+              <p>Lisbon, Portugal</p>
+              <p>London, UK</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=".col-md-6 .col-md-offset-3" style="text-align: center">
+        <hr>
+      <p>Tripping, hosting and couch surfing are done at your own risk: please use good judgement and act responsibly.</p>
+      <p> Use of Tripping.com constitutes acceptance of the Tripping Terms of Use and Privacy Policy. </p>
+      <p> Tripping International, 1 Hallidie Plaza, 2nd Floor, San Francisco, CA 94102</p>
+      <p> Copyright © 2013</p>
      </div>
+    </div>
+  </div>
+</div>
 
-
-
-      <!-- create a list view of the properties  -->
- <!--  <tripping>
-  
-  </property>  <property>
-      <id>3325</id>
-      <title><![CDATA[Apartment/Flat in Lyon, at Catherine's place]]></title>
-      <description><![CDATA[Lodging, in Lyon at Catherine's, from 45 EUR per night per one person ! Discover Lyon, and enjoy the benefits of homestay: practical advice, friendliness and low prices. This is a/an « Lodging » with a capacity of 4 person(s).]]></description>
-      <sleeps>4</sleeps>
-      <minimum-stay>1</minimum-stay>
-       <accommodation-type><![CDATA[Apartment/Flat]]></accommodation-type>
-      <location>
-        <country><![CDATA[FR]]></country>
-        <city><![CDATA[Lyon]]></city>
-        <state><![CDATA[n/a]]></state>
-        <latitude>45.7650615</latitude>
-        <longitude>4.8570174</longitude>
-      </location>
-        <amenities>
-      <amenity>Cooking facilities</amenity>
-      <amenity>Bath</amenity>
-      <amenity>Heating</amenity>
-      <amenity>Internet</amenity>
-      <amenity>Kettle</amenity>
-      <amenity>Kitchenette</amenity>
-      <amenity>Radio</amenity>
-      <amenity>Fridge</amenity>
-      <amenity>Cable/satellite</amenity>
-      <amenity>Shutter</amenity>
-      <amenity>Phone</amenity>
-      <amenity>Towels and sheets provided</amenity>
-      <amenity>Wifi</amenity>
-      <amenity>Working space</amenity>
-      <amenity>TV</amenity>
-    </amenities>
-      <rates>
-        <currency>EUR</currency>
-        <nightly>45</nightly>
-        <weekly>270</weekly>
-        <monthly>1000</monthly>
-      </rates>
-      <availability>
-        <available>2014-04-20</available>
-        <available>2014-04-21</available>
-        <available>2014-04-22</available>
-        <available>2014-04-23</available>
-        <available>2014-04-24</available>
-        <available>2014-04-25</available>
-        <available>2014-04-26</available>
-        <available>2014-11-10</available>
-        <available>2014-11-11</available>
-        <available>2014-11-12</available>
-        <available>2014-11-13</available>
-        <available>2014-11-14</available>
-        <available>2014-11-15</available>
-        <available>2014-11-16</available>
-        <available>2014-11-17</available>
-        <available>2014-11-18</available>
-        <available>2014-11-19</available>
-        <available>2014-11-20</available>
-        <available>2014-11-22</available>
-      </availability> -->
-
- <!-- <pictures>
-        <picture>https://s3.amazonaws.com/tripping-partners/housetrip/images/8348/b8719e8b3953160416430b7965cc85ff_lp.jpg</picture>
-        <picture>https://s3.amazonaws.com/tripping-partners/housetrip/images/8348/33f51e9deb298862c3042b9c655f1ef3_lp.jpg</picture>
-        <picture>https://s3.amazonaws.com/tripping-partners/housetrip/images/8348/7db8cd91ed69aaafe89664d7ef9b5bee_lp.jpg</picture>
-      </pictures> -->  
-  <!--   </property>
-   
-    </property>
-  </properties>
-  </tripping>
- -->
+    
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://code.jquery.com/jquery.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
