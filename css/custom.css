@@ -597,14 +597,18 @@ media="all"
 
 .center-listing {
   text-align: center;
+  margin-top: -6px;
 
 }
 
 .text {
-  color: #212121;
+  color: #5D3210;
 }
 
+h5{
+  font-size: 16px;
 
+}
 
 
 
